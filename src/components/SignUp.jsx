@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import { setUser } from '../store/slice/userSlice';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { Box } from '@chakra-ui/react';
 
 const SignUp = () => {
 
@@ -26,10 +27,13 @@ const SignUp = () => {
     
 
   return (
-    <Form
-        title="register"
+    <Box p={'80px 0 60px'}>
+      <Form
+        title="Register"
         handleClick={handleRegister}
-    />
+          />
+    </Box>
+    
   )
 }
 

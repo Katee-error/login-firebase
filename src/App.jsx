@@ -8,7 +8,7 @@ function App() {
   
   return (
    <Routes>
-    <Route exact path="/" element={<Home/>}/>
+    <Route exact path="/home" element={<Home/>}/>
     <Route path="/login" element={<LoginPage/>}/>
     <Route path="/register" element={<RegisterPage/>}/>
    </Routes>
@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App
+
