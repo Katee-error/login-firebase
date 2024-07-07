@@ -1,6 +1,8 @@
-import { VStack, Container, FormControl, FormLabel, FormHelperText, Input, InputGroup, Button } from '@chakra-ui/react'
+import { VStack, Container, FormControl, FormLabel, FormHelperText, Input, InputGroup,InputLeftElement, Button } from '@chakra-ui/react'
 import React from 'react'
 import { useState } from 'react'
+import { FiMail } from "react-icons/fi";
+import { FiLock } from "react-icons/fi";
 
 const Form = ({title, handleClick}) => { // не забывать передавать пропсы в фигурных скобках
     const [pass, setPass] = useState('')
@@ -14,16 +16,24 @@ const Form = ({title, handleClick}) => { // не забывать передав
         <VStack spacing={6}>
           <FormControl>
         <FormLabel>Email</FormLabel>
+        <InputGroup >
+        <InputLeftElement pointerEvents='none' >
+            <FiMail/>
+          </InputLeftElement>
           <Input type='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='Enter email'
           />
+          </InputGroup>
         {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
             </FormControl>
           <FormControl>
         <FormLabel>Password</FormLabel>
           <InputGroup>
+          <InputLeftElement pointerEvents='none' >
+            <FiLock/>
+          </InputLeftElement>
             <Input
             type='password'
             //type={show ? 'text' : 'password'}
