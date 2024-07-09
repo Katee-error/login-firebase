@@ -10,6 +10,7 @@ const SignUp = () => {
 
   const dispatch = useDispatch()
   const navigate = useNavigate();
+  
     const handleRegister = (email, password) => {
       const auth = getAuth();
       createUserWithEmailAndPassword(auth, email, password)

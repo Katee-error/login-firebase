@@ -21,10 +21,10 @@ const LoginPage = () => {
             content: '""',
             position: 'absolute',
             left: 0,
-            bottom: '-3px', // Настройте это значение для изменения отступа
+            bottom: '-3px', 
             width: '11%',
-            height: '0.5px', // Толщина подчеркивания
-            backgroundColor: 'white', // Цвет подчеркивания
+            height: '0.5px', 
+            backgroundColor: 'white', 
           }}
               >
             Or <Link to="/register">register</Link>

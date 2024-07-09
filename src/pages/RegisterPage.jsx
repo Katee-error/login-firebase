@@ -21,10 +21,10 @@ const RegisterPage = () => {
             content: '""',
             position: 'absolute',
             left: 0,
-            bottom: '-3px', // Настройте это значение для изменения отступа
+            bottom: '-3px', 
             width: '33%',
-            height: '0.5px', // Толщина подчеркивания
-            backgroundColor: 'white', // Цвет подчеркивания
+            height: '0.5px', 
+            backgroundColor: 'white', 
           }}
           >
           Already have an account? <Link to="/login"> <Box as='span' fontWeight={800} color={'blue.400'}>Sign in</Box></Link>

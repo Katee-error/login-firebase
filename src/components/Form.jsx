@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { FiMail } from "react-icons/fi";
 import { FiLock } from "react-icons/fi";
 
-const Form = ({title, handleClick}) => { // не забывать передавать пропсы в фигурных скобках
+const Form = ({title, handleClick}) => { 
     const [pass, setPass] = useState('')
     const [email, setEmail] = useState('')
 
@@ -65,9 +65,6 @@ const Form = ({title, handleClick}) => { // не забывать передав
 export default Form
 
 // прописать валидацию на форму 
-
-// сделать иконки на инпуты 
-
 
 
 // function errorMessageExample() {
